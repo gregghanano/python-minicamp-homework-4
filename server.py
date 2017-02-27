@@ -27,7 +27,7 @@ def add_movie():
         return message
 
 @app.route('/movies')
-def get_movies():j
+def get_movies():
     connection = sqlite3.connect('database.db')
     cursor = connection.cursor()
     cursor.execute('SELECT * FROM movies')
